@@ -2,7 +2,7 @@ Algoritmo "exercicio23"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Jailson Costa
 // Descrição   : Calcula o peso ideal para uma pessoa, baseando-se no sexo e altura.
-// Autor(a)    : Nome do(a) aluno(a)
+// Autor(a)    : Guilherme Miranda de Morais
 // Data atual  : 9/13/2026
 Var
    // Seção de Declarações das variáveis

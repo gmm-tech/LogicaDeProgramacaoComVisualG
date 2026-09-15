@@ -1,7 +1,7 @@
 Algoritmo "exercicio22"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Jailson Costa
-// Descrição   : Algoritmo desenvolvido para calcular o salário mensal de um funcionário com base nas horas trabalhadas e no valor da hora. Caso ultrapasse 160 horas mensais, as horas excedentes são calculadas como hora extra com acréscimo de 50%.
+// Descrição   : Calcula o salário mensal de um funcionário com base nas horas trabalhadas e no valor da hora. Caso ultrapasse 160 horas mensais, as horas excedentes são calculadas como hora extra com acréscimo de 50%.
 // Autor(a)    : Guilherme Miranda de Morais
 // Data atual  : 9/13/2026
 Var
@@ -17,11 +17,11 @@ Inicio
 
    se horasTrabalhadas > 160 entao
       horaExtra <- horasTrabalhadas - 160
-      salarioTotal <- (160 * salarioHora) + (horaExtra * salarioHora * 1.50)
+      salarioTotal <- (160 * salarioHora) + (horaExtra * salarioHora * 1.5)
    senao
       salarioTotal <- horasTrabalhadas * salarioHora
    fimse
    
-   Escreval("Salário total: R$", salarioTotal:0:2)
+   Escreval("Salário total: R$", salarioTotal:1:2)
 
 Fimalgoritmo

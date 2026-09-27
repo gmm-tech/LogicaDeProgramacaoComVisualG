@@ -1,0 +1,37 @@
+algoritmo "exercicioL04F"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Leitura sucessiva de valores positivos, apresentando somatório, média e total de lidos ao informar valor negativo.
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  valor, soma, totalLidos:real
+  media: real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  soma <- 0
+  totalLidos <- 0
+
+  repita
+    Escreva("Digite um valor positivo (ou negativo para sair): ")
+    Leia(valor)
+
+    se valor >= 0 entao
+      soma <- soma + valor
+      totalLidos <- totalLidos + 1
+    fimse
+  ate valor < 0
+
+  Escreval("")
+  se totalLidos > 0 entao
+    media <- soma / totalLidos
+    Escreval("Total de valores lidos: ", totalLidos)
+    Escreval("Somatório dos valores: ", soma)
+    Escreval("Média aritmética: ", media)
+  senao
+    Escreval("Nenhum valor positivo foi fornecido.")
+  fimse
+
+fimalgoritmo

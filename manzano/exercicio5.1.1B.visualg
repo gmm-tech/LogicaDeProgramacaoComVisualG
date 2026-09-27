@@ -1,0 +1,27 @@
+algoritmo "exercicio5.1.1B"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100).
+
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 26/09/2026
+var
+  // Seção de Declarações das variáveis
+  numero, soma:inteiro
+
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  Escreval("Soma dos cem primeiros números")
+
+  soma <- 0
+  numero <- 1
+
+  enquanto numero <= 100 faca
+    soma <- soma + numero
+    numero <- numero + 1
+  fimenquanto
+
+  Escreval(soma)
+
+fimalgoritmo

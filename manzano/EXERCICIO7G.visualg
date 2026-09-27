@@ -1,0 +1,56 @@
+algoritmo "exercicio7G"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se na utilização do conceito da propriedade distributiva. Ou seja, se forem lidas as variáveis A, B, C, e D,devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fim C com D. Perceba que será necessário efetuar seis operações de adição e seis operações de multiplicação e apresentar doze resultados de saída.
+
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 23/09/2026
+var
+  // Seção de Declarações das variáveis
+  A, B, C, D:inteiro
+
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  Escreval("Digite o valor de A:")
+  Leia(A)
+  Escreval("Digite o valor de B:")
+  Leia(B)
+  Escreval("Digite o valor de C:")
+  Leia(C)
+  Escreval("Digite o valor de D:")
+  Leia(D)
+
+  Escreval("A + B: ", A + B)
+  Escreval("A + C: ", A + C)
+  Escreval("A + D: ", A + D)
+
+  Escreval("B + A: ", B + A)
+  Escreval("B + C: ", B + c)
+  Escreval("B + D: ", B + D)
+
+  Escreval("C + A: ", C + A)
+  Escreval("C + B: ", C + B)
+  Escreval("C + D: ", C + D)
+
+  Escreval("D + A: ", D + A)
+  Escreval("D + B: ", D + B)
+  Escreval("D + C: ", D + C)
+
+  Escreval("A * B: ", A * B)
+  Escreval("A * C: ", A * C)
+  Escreval("A * D: ", A * D)
+
+  Escreval("B * A: ", B * A)
+  Escreval("B * C: ", B * c)
+  Escreval("B * D: ", B * D)
+
+  Escreval("C * A: ", C * A)
+  Escreval("C * B: ", C * B)
+  Escreval("C * D: ", C * D)
+
+  Escreval("D * A: ", D * A)
+  Escreval("D * B: ", D * B)
+  Escreval("D * C: ", D * C)
+
+fimalgoritmo

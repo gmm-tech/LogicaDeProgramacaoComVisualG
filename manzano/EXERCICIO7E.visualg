@@ -1,0 +1,26 @@
+algoritmo "exercicio7E"
+  // Disciplina : [Linguagem e Lógica de Programação]
+  // Professor : Jailson Costa
+  // Descrição : Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTACAO = VALOR + (VALOR * TAXA/100) * TEMPO)
+
+  // Autor(a) : Guilherme Miranda de Morais
+  // Data atual : 23/09/2026
+var
+  // Seção de Declarações das variáveis
+  prestacao, valor, taxa, tempo:real
+
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  Escreval("Digite o valor da prestação")
+  Leia(valor)
+  Escreval("Digite o valor da taxa")
+  Leia(taxa)
+  Escreval("Digite o tempo de atraso")
+  Leia(tempo)
+
+  prestacao <- valor + (valor * taxa / 100) * tempo
+
+  Escreval("O valor da prestação considerando o atraso é: ", prestacao)
+
+fimalgoritmo

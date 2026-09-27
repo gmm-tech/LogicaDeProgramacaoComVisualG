@@ -1,0 +1,36 @@
+algoritmo "L04J"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Apresentar o resultado inteiro da divisão de dois números utilizando laço de repetição (sem o operador DIV).
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  dividendo, divisor, quociente, resto:inteiro
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  Escreva("Digite o dividendo (número a ser dividido): ")
+  Leia(dividendo)
+  Escreva("Digite o divisor: ")
+  Leia(divisor)
+
+  se divisor <= 0 entao
+    Escreval("Divisão inválida! O divisor deve ser maior que zero.")
+  senao
+    quociente <- 0
+    resto <- dividendo
+
+    se resto >= divisor entao
+      repita
+        resto <- resto - divisor
+        quociente <- quociente + 1
+      ate resto < divisor
+    fimse
+
+    Escreval("")
+    Escreval("Resultado inteiro da divisão (quociente): ", quociente)
+    Escreval("Resto da divisão: ", resto)
+  fimse
+
+fimalgoritmo

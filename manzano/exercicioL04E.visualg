@@ -1,0 +1,37 @@
+algoritmo "exercicioL04E"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Efetuar a leitura de 15 valores inteiros e apresentar o somatório do fatorial de cada valor.
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  contador, valor, i:inteiro
+  fatorial, somaFatorial:real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  contador <- 1
+  somaFatorial <- 0
+
+  repita
+    Escreva("Digite o ", contador, "º valor inteiro: ")
+    Leia(valor)
+
+    fatorial <- 1
+    i <- 1
+    se valor > 0 entao
+      repita
+        fatorial <- fatorial * i
+        i <- i + 1
+      ate i > valor
+    fimse
+
+    somaFatorial <- somaFatorial + fatorial
+    contador <- contador + 1
+  ate contador > 15
+
+  Escreval("")
+  Escreval("Total do somatório dos fatoriais: ", somaFatorial)
+
+fimalgoritmo

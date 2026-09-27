@@ -1,0 +1,26 @@
+algoritmo "exercicioL05G"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Apresentar os resultados das potências de 3, variando do expoente 0 até 15 (sem operador ^).
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  expoente:inteiro
+  potencia:real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  potencia <- 1
+
+  para expoente de 0 ate 15 faca
+    se expoente = 0 entao
+      potencia <- 1
+    senao
+      potencia <- potencia * 3
+    fimse
+
+    Escreval("3 elevado a ", expoente, " = ", potencia)
+  fimpara
+
+fimalgoritmo

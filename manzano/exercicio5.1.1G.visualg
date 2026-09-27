@@ -1,0 +1,26 @@
+algoritmo "exercicio5.1.1G"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc. 
+
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  numeroAnterior, numeroAtual, sequencia, auxiliar:inteiro
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  numeroAnterior <- 0
+  numeroAtual <- 1
+  auxiliar <- 0
+
+  enquanto sequencia < 15 faca
+    numeroAtual <- numeroAtual + numeroAnterior
+    numeroAnterior <- auxiliar
+    auxiliar <- numeroAtual
+    sequencia <- sequencia + 1
+    Escreval(numeroAtual)
+  fimenquanto
+
+fimalgoritmo

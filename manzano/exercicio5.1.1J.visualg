@@ -1,0 +1,29 @@
+algoritmo "exercicio5.1.1J"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Apresentar os resultados da soma e da média aritmética dos valores pares na faixa numérica de 50 a 70.
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  numero, soma, quantidade:inteiro
+  media:real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  numero <- 50
+  soma <- 0
+  quantidade <- 0
+
+  enquanto numero <= 70 faca
+    soma <- soma + numero
+    quantidade <- quantidade + 1
+    numero <- numero + 2
+  fimenquanto
+
+  media <- soma / quantidade
+
+  Escreval("Soma dos valores pares (50 a 70): ", soma)
+  Escreval("Média aritmética dos valores pares: ", media)
+
+fimalgoritmo

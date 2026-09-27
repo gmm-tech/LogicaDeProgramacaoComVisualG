@@ -1,0 +1,26 @@
+algoritmo "exercicioL04D"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Calcular o somatório do número de grãos de trigo em um tabuleiro de xadrez (64 quadros).
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  quadro:inteiro
+  graos, somaGraos:real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  quadro <- 1
+  graos <- 1
+  somaGraos <- 0
+
+  repita
+    somaGraos <- somaGraos + graos
+    graos <- graos * 2
+    quadro <- quadro + 1
+  ate quadro > 64
+
+  Escreval("O total de grãos de trigo no tabuleiro é: ", somaGraos)
+
+fimalgoritmo

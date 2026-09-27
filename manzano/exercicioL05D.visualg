@@ -1,0 +1,23 @@
+algoritmo "exercicioL05D"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Apresentar o somatório dos valores pares existentes na faixa de 1 até 500.
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  contador, somaPares:inteiro
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  somaPares <- 0
+
+  para contador de 1 ate 500 faca
+    se contador mod 2 = 0 entao
+      somaPares <- somaPares + contador
+    fimse
+  fimpara
+
+  Escreval("O somatório dos valores pares de 1 até 500 é: ", somaPares)
+
+fimalgoritmo

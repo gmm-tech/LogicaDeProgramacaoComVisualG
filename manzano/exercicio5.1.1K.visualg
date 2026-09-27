@@ -1,0 +1,38 @@
+algoritmo "exercicio5.1.1K"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Calcular a área total de uma residência solicitando nome, largura e comprimento dos cômodos até que o usuário responda NAO.
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  nome, resposta: caractere
+  largura, comprimento, area_comodo, area_total: real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  area_total <- 0
+  resposta <- "SIM"
+
+  enquanto Maiusc(resposta) <> "NAO" faca
+    Escreva("Digite o nome do cômodo: ")
+    Leia(nome)
+    Escreva("Digite a largura do cômodo (m): ")
+    Leia(largura)
+    Escreva("Digite o comprimento do cômodo (m): ")
+    Leia(comprimento)
+
+    area_comodo <- largura * comprimento
+    area_total <- area_total + area_comodo
+
+    Escreval("A área do(a) ", nome, " é: ", area_comodo, " m²")
+    Escreval("")
+
+    Escreva("Deseja continuar calculando novos cômodos? (SIM/NAO): ")
+    Leia(resposta)
+    Escreval("")
+  fimenquanto
+
+  Escreval("Área total acumulada da residência: ", area_total, " m²")
+
+fimalgoritmo

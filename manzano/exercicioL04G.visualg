@@ -1,0 +1,31 @@
+algoritmo "L04G"
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Jailson Costa
+// Descrição : Apresentar o fatorial dos valores ímpares situados na faixa de 1 a 10.
+// Autor(a) : Guilherme Miranda de Morais
+// Data atual : 27/09/2026
+var
+  // Seção de Declarações das variáveis
+  numero, i:inteiro
+  fatorial:real
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  numero <- 1
+
+  repita
+    se numero mod 2 <> 0 entao
+      fatorial <- 1
+      i <- 1
+      repita
+        fatorial <- fatorial * i
+        i <- i + 1
+      ate i > numero
+
+      Escreval("Fatorial de ", numero, " é: ", fatorial)
+    fimse
+
+    numero <- numero + 1
+  ate numero > 10
+
+fimalgoritmo

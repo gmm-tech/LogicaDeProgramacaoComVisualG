@@ -1,0 +1,22 @@
+algoritmo "exercicio7B"
+  // Disciplina : [Linguagem e Lógica de Programação]
+  // Professor : Jailson Costa
+  // Descrição : Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de conversão é C (F - 32) * (5/9) , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+
+  // Autor(a) : Guilherme Miranda de Morais
+  // Data atual : 23/09/2026
+var
+  // Seção de Declarações das variáveis
+  celsius, fahrenheit:real
+
+inicio
+
+  // Seção de Comandos, procedimento, funções, operadores, etc...
+  Escreval("Digite a temperatura em graus fahrenheit")
+  Leia(fahrenheit)
+
+  celsius <- (fahrenheit - 32) * (5 / 9)
+
+  Escreval("A temperatura convertida em graus celsius é: " + celsius)
+
+fimalgoritmo
